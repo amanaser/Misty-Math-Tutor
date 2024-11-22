@@ -1,0 +1,7 @@
+transformers==4.30.0
+pydub==0.25.1
+webrtcvad==2.0.10
+retico-core
+torch==2.0.0
+torchvision==0.15.0
+torchaudio==2.0.0

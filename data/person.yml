@@ -1,0 +1,297 @@
+version: "3.1"
+nlu:
+- intent: goodbye
+  examples: |
+    - Bye 
+    - Goodbye
+    - See you later
+    - Bye bot
+    - Goodbye friend
+    - bye
+    - bye for now
+    - catch you later
+    - gotta go
+    - See you
+    - goodnight
+    - have a nice day
+    - i'm off
+    - see you later alligator
+    - we'll speak soon
+- intent: greet
+  examples: |
+    - Hi
+    - Hey
+    - Hi bot
+    - Hey bot
+    - Hello
+    - Good morning
+    - hi again
+    - hi folks
+    - hi Mister
+    - hi pal!
+    - hi there
+    - greetings
+    - hello everybody
+    - hello is anybody there
+    - hello robot
+- intent: thanks
+  examples: |
+    - Thanks
+    - Thank you
+    - Thank you so much
+    - Thanks bot
+    - Thanks for that
+    - cheers
+    - cheers bro
+    - ok thanks!
+    - perfect thank you
+    - thanks a bunch for everything
+    - thanks for the help
+    - thanks a lot
+    - amazing, thanks
+    - cool, thanks
+    - cool thank you
+- intent: affirm
+  examples: |
+    - yes
+    - yep
+    - right
+    - that's right
+    - you got it
+    - well done
+    - yes sure
+    - absolutely
+    - for sure
+    - yes yes yes
+    - definitely
+- intent: deny
+  examples: |
+    - no
+    - nope
+    - not that
+    - no no no
+    - that's not correct
+- intent: answer_arithmetic_question
+  examples: |
+    - The answer is [2](arithmetic_answer)
+    - It is [4](arithmetic_answer)
+    - [3](arithmetic_answer)
+    - I think it's [6](arithmetic_answer)
+    - That should be [7](arithmetic_answer)
+    - Is it [5](arithmetic_answer)?
+    - [8](arithmetic_answer)
+    - My answer is [9](arithmetic_answer)
+    - Misty, it's [10](arithmetic_answer)
+    - [1](arithmetic_answer) is the answer
+    - [3 + 2](arithmetic_answer) equals [5](arithmetic_answer)
+    - [7 - 3](arithmetic_answer) is [4](arithmetic_answer)
+    - [1 + 1](arithmetic_answer) equals [2](arithmetic_answer)
+    - [4 + 4](arithmetic_answer) is [8](arithmetic_answer)
+    - The result of [9 - 5](arithmetic_answer) is [4](arithmetic_answer)
+    - [6 - 2](arithmetic_answer) equals [4](arithmetic_answer)
+    - Adding [3 + 3](arithmetic_answer) gives [6](arithmetic_answer)
+    - Subtracting [7 - 6](arithmetic_answer) leaves [1](arithmetic_answer)
+    - The sum of [5 + 5](arithmetic_answer) is [10](arithmetic_answer)
+    - Misty, [2 + 4](arithmetic_answer) equals [6](arithmetic_answer)
+    - If you subtract [8 - 4](arithmetic_answer), you get [4](arithmetic_answer)
+    - [6 + 1](arithmetic_answer) makes [7](arithmetic_answer)
+    - [10 - 9](arithmetic_answer) is [1](arithmetic_answer)
+    - Adding [1 + 2](arithmetic_answer) equals [3](arithmetic_answer)
+    - Subtracting [5 - 3](arithmetic_answer) gives [2](arithmetic_answer)
+    - The answer to [2 + 3](arithmetic_answer) is [5](arithmetic_answer)
+    - [4 + 1](arithmetic_answer) is [5](arithmetic_answer)
+    - The difference of [10 - 8](arithmetic_answer) is [2](arithmetic_answer)
+    - The result of [9 - 4](arithmetic_answer) is [5](arithmetic_answer)
+    - It's [2](arithmetic_answer)
+    - I believe it's [3](arithmetic_answer)
+    - The sum is [5](arithmetic_answer)
+    - That equals [4](arithmetic_answer)
+    - My guess is [6](arithmetic_answer)
+    - [7](arithmetic_answer), for sure
+    - It's got to be [8](arithmetic_answer)
+    - [9](arithmetic_answer) is my answer
+    - The answer should be [10](arithmetic_answer)
+    - Misty, the answer is [4](arithmetic_answer)
+    - Adding [1 + 4](arithmetic_answer) gives [5](arithmetic_answer)
+    - Subtracting [8 - 6](arithmetic_answer) is [2](arithmetic_answer)
+    - [3 + 6](arithmetic_answer) equals [9](arithmetic_answer)
+    - The difference is [7](arithmetic_answer)
+    - The total is [6](arithmetic_answer)
+    - The result is [8](arithmetic_answer)
+    - The answer is [two](arithmetic_answer)
+    - It is [four](arithmetic_answer)
+    - [three](arithmetic_answer)
+    - I think it's [six](arithmetic_answer)
+    - That should be [seven](arithmetic_answer)
+    - Is it [five](arithmetic_answer)?
+    - [eight](arithmetic_answer)
+    - My answer is [nine](arithmetic_answer)
+    - Misty, it's [ten](arithmetic_answer)
+    - [one](arithmetic_answer) is the answer
+    - [3 + 2](arithmetic_answer) equals [five](arithmetic_answer)
+    - [seven - three](arithmetic_answer) is [four](arithmetic_answer)
+    - [one + one](arithmetic_answer) equals [two](arithmetic_answer)
+    - [four + four](arithmetic_answer) is [eight](arithmetic_answer)
+    - The result of [nine - five](arithmetic_answer) is [four](arithmetic_answer)
+    - [six - two](arithmetic_answer) equals [four](arithmetic_answer)
+    - Adding [three + three](arithmetic_answer) gives [six](arithmetic_answer)
+    - Subtracting [seven - six](arithmetic_answer) leaves [one](arithmetic_answer)
+    - The sum of [five + five](arithmetic_answer) is [ten](arithmetic_answer)
+    - Misty, [two + four](arithmetic_answer) equals [six](arithmetic_answer)
+    - If you subtract [eight - four](arithmetic_answer), you get [four](arithmetic_answer)
+    - [10](arithmetic_answer), that’s my answer
+    - It's definitely [3](arithmetic_answer)
+    - [7 - 5](arithmetic_answer) leaves [2](arithmetic_answer)
+    - Adding up [4 + 2](arithmetic_answer) gives [6](arithmetic_answer)
+    - Subtracting [6 - 1](arithmetic_answer) is [5](arithmetic_answer)
+    - Misty, [9 - 8](arithmetic_answer) is [1](arithmetic_answer)
+    - [2 + 2](arithmetic_answer) equals [4](arithmetic_answer)
+    - The sum of [3 + 4](arithmetic_answer) is [7](arithmetic_answer)
+    - If you add [5 + 1](arithmetic_answer), it's [6](arithmetic_answer)
+    - [8 - 3](arithmetic_answer) makes [5](arithmetic_answer)
+    - [4 + 3](arithmetic_answer) equals [7](arithmetic_answer)
+    - [2 + 5](arithmetic_answer) gives [7](arithmetic_answer)
+    - Subtracting [9 - 6](arithmetic_answer) equals [3](arithmetic_answer)
+    - The result of [1 + 1](arithmetic_answer) is [2](arithmetic_answer)
+    - The answer for [6 - 4](arithmetic_answer) is [2](arithmetic_answer)
+    - [3 + 3](arithmetic_answer) results in [6](arithmetic_answer)
+    - The difference is [4](arithmetic_answer) when subtracting [7 - 3](arithmetic_answer)
+    - Adding [2 + 8](arithmetic_answer) equals [10](arithmetic_answer)
+    - [10 - 2](arithmetic_answer) leaves [8](arithmetic_answer)
+    - [6 + 4](arithmetic_answer) equals [10](arithmetic_answer)
+    - If you subtract [5 - 2](arithmetic_answer), you get [3](arithmetic_answer)
+    - [4 - 2](arithmetic_answer) is [2](arithmetic_answer)
+    - [7 + 2](arithmetic_answer) equals [9](arithmetic_answer)
+    - Misty, [8 - 7](arithmetic_answer) is [1](arithmetic_answer)
+    - [1 + 3](arithmetic_answer) makes [4](arithmetic_answer)
+    - Adding [2 + 6](arithmetic_answer) equals [8](arithmetic_answer)
+    - Subtracting [9 - 7](arithmetic_answer) gives [2](arithmetic_answer)
+    - [5 + 4](arithmetic_answer) totals [9](arithmetic_answer)
+    - [7 - 2](arithmetic_answer) equals [5](arithmetic_answer)
+    - The sum of [3 + 5](arithmetic_answer) is [8](arithmetic_answer)
+    - [10 - 4](arithmetic_answer) makes [6](arithmetic_answer)
+    - If you add [1 + 8](arithmetic_answer), it's [9](arithmetic_answer)
+    - Misty, [4 + 5](arithmetic_answer) equals [9](arithmetic_answer)
+    - Subtracting [6 - 3](arithmetic_answer) equals [3](arithmetic_answer)
+    - The total is [7](arithmetic_answer) when you add [5 + 2](arithmetic_answer)
+    - The answer is [one](arithmetic_answer)
+    - I believe it's [two](arithmetic_answer)
+    - That should be [three](arithmetic_answer)
+    - It's definitely [four](arithmetic_answer)
+    - Misty, the answer is [five](arithmetic_answer)
+    - Is it [six](arithmetic_answer)?
+    - The answer might be [seven](arithmetic_answer)
+    - My answer is [eight](arithmetic_answer)
+    - It has to be [nine](arithmetic_answer)
+    - I'm sure it's [ten](arithmetic_answer)
+    - Adding [one + two](arithmetic_answer) equals [three](arithmetic_answer)
+    - Subtracting [five - four](arithmetic_answer) gives [one](arithmetic_answer)
+    - The sum of [seven + three](arithmetic_answer) is [ten](arithmetic_answer)
+    - If you subtract [eight - six](arithmetic_answer), you get [two](arithmetic_answer)
+    - [three + five](arithmetic_answer) equals [eight](arithmetic_answer)
+    - The difference between [ten - one](arithmetic_answer) is [nine](arithmetic_answer)
+    - [four + four](arithmetic_answer) equals [eight](arithmetic_answer)
+    - Misty, the sum of [six + three](arithmetic_answer) is [nine](arithmetic_answer)
+    - Subtracting [nine - seven](arithmetic_answer) leaves [two](arithmetic_answer)
+    - Adding [two + two](arithmetic_answer) gives [four](arithmetic_answer)
+    - [9 - 5](arithmetic_answer) equals [4](arithmetic_answer)
+    - It's definitely [7](arithmetic_answer)
+    - The answer is clearly [8](arithmetic_answer)
+    - I’m sure it’s [5](arithmetic_answer)
+    - Let’s go with [3](arithmetic_answer)
+    - My calculation says [6](arithmetic_answer)
+    - I think it’s [4](arithmetic_answer)
+    - [2](arithmetic_answer) should be correct
+    - I’ll say [9](arithmetic_answer)
+    - That adds up to [10](arithmetic_answer)
+    - Subtracting gives me [3](arithmetic_answer)
+    - Misty, it’s [4](arithmetic_answer), I think
+    - The total is [5](arithmetic_answer)
+    - My answer is [6](arithmetic_answer)
+    - Adding gives [7](arithmetic_answer)
+    - The difference is [2](arithmetic_answer)
+    - That equals [1](arithmetic_answer)
+    - [8](arithmetic_answer) seems right to me
+    - Let’s say it’s [10](arithmetic_answer)
+    - Adding [5 + 5](arithmetic_answer), I get [10](arithmetic_answer)
+    - Subtracting [9 - 4](arithmetic_answer) leaves [5](arithmetic_answer)
+    - [3 + 2](arithmetic_answer) equals [5](arithmetic_answer)
+    - [6 - 3](arithmetic_answer) is [3](arithmetic_answer)
+    - It’s got to be [7](arithmetic_answer)
+    - [2 + 2](arithmetic_answer) makes [4](arithmetic_answer)
+    - The result is [9](arithmetic_answer)
+    - I calculated [3 + 6](arithmetic_answer) and got [9](arithmetic_answer)
+    - [10 - 6](arithmetic_answer) equals [4](arithmetic_answer)
+    - Adding [1 + 2](arithmetic_answer), it’s [3](arithmetic_answer)
+    - Subtracting [7 - 5](arithmetic_answer) gives me [2](arithmetic_answer)
+    - The sum of [4 + 4](arithmetic_answer) is [8](arithmetic_answer)
+    - [8 - 2](arithmetic_answer) results in [6](arithmetic_answer)
+    - The answer is [1](arithmetic_answer) from [2 - 1](arithmetic_answer)
+    - Adding [3 + 3](arithmetic_answer) gives [6](arithmetic_answer)
+    - I believe the difference is [2](arithmetic_answer)
+    - Misty, the result of [5 + 1](arithmetic_answer) is [6](arithmetic_answer)
+    - [4 + 6](arithmetic_answer) equals [10](arithmetic_answer)
+    - Subtracting [6 - 2](arithmetic_answer) makes [4](arithmetic_answer)
+    - [7 + 3](arithmetic_answer) is [10](arithmetic_answer)
+    - [10 - 9](arithmetic_answer) equals [1](arithmetic_answer)
+    - Misty, I’ll go with [9](arithmetic_answer)
+    - Adding [2 + 7](arithmetic_answer) gives me [9](arithmetic_answer)
+    - Subtracting [8 - 5](arithmetic_answer) leaves [3](arithmetic_answer)
+    - The sum is [6](arithmetic_answer)
+    - I calculated [7 - 2](arithmetic_answer) and it’s [5](arithmetic_answer)
+    - [1 + 3](arithmetic_answer) makes [4](arithmetic_answer)
+    - Adding [6 + 3](arithmetic_answer), I got [9](arithmetic_answer)
+    - Subtracting [4 - 2](arithmetic_answer) results in [2](arithmetic_answer)
+    - [5 + 4](arithmetic_answer) totals [9](arithmetic_answer)
+    - Misty, [9 - 3](arithmetic_answer) is [6](arithmetic_answer)
+    - [8 + 2](arithmetic_answer) equals [10](arithmetic_answer)
+    - [3 + 5](arithmetic_answer) adds up to [8](arithmetic_answer)
+    - I think it’s [7](arithmetic_answer)
+    - The answer should be [2](arithmetic_answer)
+    - Let’s say it’s [4](arithmetic_answer)
+    - Adding [4 + 1](arithmetic_answer) equals [5](arithmetic_answer)
+    - [6 + 2](arithmetic_answer) makes [8](arithmetic_answer)
+    - Subtracting [5 - 3](arithmetic_answer) leaves [2](arithmetic_answer)
+    - [7 - 1](arithmetic_answer) is [6](arithmetic_answer)
+    - Adding [2 + 8](arithmetic_answer) gives [10](arithmetic_answer)
+    - [9 - 4](arithmetic_answer) equals [5](arithmetic_answer)
+    - [2 + 3](arithmetic_answer) adds up to [5](arithmetic_answer)
+    - [8 - 6](arithmetic_answer) results in [2](arithmetic_answer)
+    - The sum of [1 + 6](arithmetic_answer) is [7](arithmetic_answer)
+    - The answer is [one](arithmetic_answer)
+    - It could be [two](arithmetic_answer)
+    - That should be [three](arithmetic_answer)
+    - Misty, I think it's [four](arithmetic_answer)
+    - The correct answer is [five](arithmetic_answer)
+    - It has to be [six](arithmetic_answer)
+    - The solution is [seven](arithmetic_answer)
+    - Is it [eight](arithmetic_answer)?
+    - I’m certain it’s [nine](arithmetic_answer)
+    - My guess is [ten](arithmetic_answer)
+    - Adding [two + two](arithmetic_answer) makes [four](arithmetic_answer)
+    - The result of [three + four](arithmetic_answer) is [seven](arithmetic_answer)
+    - Subtracting [ten - six](arithmetic_answer) gives [four](arithmetic_answer)
+    - The difference between [nine - eight](arithmetic_answer) is [one](arithmetic_answer)
+    - Adding [one + five](arithmetic_answer) equals [six](arithmetic_answer)
+    - Misty, [four + two](arithmetic_answer) makes [six](arithmetic_answer)
+    - Subtracting [seven - three](arithmetic_answer) gives [four](arithmetic_answer)
+    - The sum of [six + two](arithmetic_answer) equals [eight](arithmetic_answer)
+    - Adding [three + six](arithmetic_answer) gives [nine](arithmetic_answer)
+    - If you subtract [five - two](arithmetic_answer), you get [three](arithmetic_answer)
+    - Adding [one + nine](arithmetic_answer) makes [ten](arithmetic_answer)
+    - The difference between [eight - four](arithmetic_answer) is [four](arithmetic_answer)
+    - Misty, the result of [three + seven](arithmetic_answer) is [ten](arithmetic_answer)
+    - Subtracting [four - two](arithmetic_answer) leaves [two](arithmetic_answer)
+
+synonyms:
+  one: 1
+  two: 2
+  three: 3
+  four: 4
+  five: 5
+  six: 6
+  seven: 7
+  eight: 8
+  nine: 9
+  ten: 10
+

@@ -1,0 +1,17 @@
+version: "3.1"
+config:
+  store_entities_as_slots: true
+session_config:
+  carry_over_slots_to_new_session: true
+  session_expiration_time: 0.5  # value in minutes
+intents:
+- goodbye
+- greet
+- thanks
+- affirm
+- deny
+- answer_arithmetic_question:
+  use_entities: [arithmetic_answer]
+  
+entities:
+- arithmetic_answer

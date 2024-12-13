@@ -29,9 +29,9 @@ This module helps identify and name colors using objects.
 ---
 
 ## Prerequisites
-- **Misty II Robot:** 
-- **Retico Incremental Framework:** 
-- **Python 3.8 or higher:**
+- **Misty II Robot** 
+- **Retico Incremental Framework** 
+- **Python 3.8 or higher**
 
 ---
 

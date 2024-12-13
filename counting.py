@@ -28,6 +28,7 @@ class CountingModule(abstract.AbstractProducingModule):
         self.misty = misty_ip
         self.max_count = 10
         self.current_number = 0 
+        self.running = True
 
     # def _run(self):
     #     """Run the module to produce outputs (speak and display images)."""
@@ -53,37 +54,37 @@ class CountingModule(abstract.AbstractProducingModule):
     
     def count_and_display(self):
         number_words = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"]
+        # number_words = ["one"]
+
 
         for _ in range(1): 
             for i, word in enumerate(number_words, 1):
-                self.misty.speak(f"Counting: {word}")
+                self.misty.speak(f"{word}")
                 self.misty.display_image(f"{word}.png")
-                time.sleep(2)
+                time.sleep(3)
 
-            time.sleep(2)
-            self.misty.speak("Great job! Let's do it one more time.")
+            time.sleep(3)
+            self.misty.speak("Great job!")
             self.misty.display_image("e_DefaultContent.jpg")
-            time.sleep(2)
+            time.sleep(3)
 
         self.shutdown()
         
-        
-
     def print_status(self, response, caller_function):
         print(f"Status from {caller_function}")
-
 
     def prepare_run(self):
         self.misty.display_image("e_DefaultContent.jpg")
         self.misty.speak("Hi! Today, we will practice counting numbers together.")
-        time.sleep(1)
-        self.misty.speak(f"We'll count from one to {self.max_count}.")
-        time.sleep(2)
+        time.sleep(3)
+        self.misty.speak(f"We'll count from one to ten.")
+        time.sleep(3)
 
         self.current_number = 1
         self.count_and_display()
     
     def shutdown(self):
+        self.running = False
         self._is_running = False
         self.misty.speak("We're all done now. Thanks for counting with me!")
         self.misty.display_image("e_DefaultContent.jpg")

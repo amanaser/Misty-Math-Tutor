@@ -1,0 +1,149 @@
+version: "3.1"
+nlu:
+- intent: goodbye
+  examples: |
+    - Bye
+    - Goodbye
+    - See you later
+    - Bye bot
+    - Goodbye friend
+    - bye
+    - bye for now
+    - catch you later
+    - gotta go
+    - See you
+    - goodnight
+    - have a nice day
+    - i'm off
+    - see you later alligator
+    - we'll speak soon
+- intent: greet
+  examples: |
+    - Hi
+    - Hey
+    - Hi bot
+    - Hey bot
+    - Hello
+    - Good morning
+    - hi again
+    - hi folks
+    - hi Mister
+    - hi pal!
+    - hi there
+    - greetings
+    - hello everybody
+    - hello is anybody there
+    - hello robot
+- intent: thanks
+  examples: |
+    - Thanks
+    - Thank you
+    - Thank you so much
+    - Thanks bot
+    - Thanks for that
+    - cheers
+    - cheers bro
+    - ok thanks!
+    - perfect thank you
+    - thanks a bunch for everything
+    - thanks for the help
+    - thanks a lot
+    - amazing, thanks
+    - cool, thanks
+    - cool thank you
+- intent: affirm
+  examples: |
+    - yes
+    - yep
+    - right
+    - that's right
+    - you got it
+    - well done
+    - yes sure
+    - absolutely
+    - for sure
+    - yes yes yes
+    - definitely
+- intent: deny
+  examples: |
+    - no
+    - nope
+    - not that
+    - no no no
+    - that's not correct
+- intent: answer_color_question
+  examples: |
+    - The color is [red](color)
+    - It's [green](color)
+    - I think it's [yellow](color)
+    - The color is definitely [orange](color)
+    - It's [blue](color)
+    - That must be [purple](color)
+    - [red](color)
+    - [orange](color)
+    - [green](color)
+    - [yellow](color)
+    - [blue](color)
+    - [purple](color)
+    - My answer is [red](color)
+    - Is it [green](color)?
+    - It's got to be [yellow](color)
+    - I believe it's [orange](color)
+    - The shade is [red](color)
+    - Is it [blue](color)?
+    - I think it is [green](color)
+    - That looks like [yellow](color)
+    - It could be [purple](color)
+    - The color appears to be [orange](color)
+    - My guess is [blue](color)
+    - Could it be [red](color)?
+    - This seems like [green](color)
+    - It has to be [yellow](color)
+    - Definitely [purple](color)
+    - I am going with [orange](color)
+    - Is this [red](color)?
+    - The answer is [blue](color)
+    - It is obviously [green](color)
+    - I am certain it is [yellow](color)
+    - Looks like [purple](color)
+    - I would say [orange](color)
+    - [blue](color), for sure
+    - [red](color), without a doubt
+    - [green](color) is my answer
+    - Let’s go with [yellow](color)
+    - That’s [purple](color), right?
+    - Possibly [orange](color)
+    - The color is [pink](color)
+    - I think it’s [brown](color)
+    - It must be [gray](color)
+    - The answer is [black](color)
+    - Could it be [white](color)?
+    - That’s definitely [teal](color)
+    - My choice is [magenta](color)
+    - Is it [cyan](color)?
+    - It looks like [gold](color)
+    - I believe it’s [silver](color)
+    - [pink](color) is my guess
+    - [brown](color), no doubt
+    - I’m pretty sure it’s [gray](color)
+    - This one’s [black](color)
+    - Definitely [white](color)
+    - I’m certain it’s [teal](color)
+    - Let’s go with [magenta](color)
+    - Is it possibly [cyan](color)?
+    - I’m guessing [gold](color)
+    - It might be [silver](color)
+    - The shade looks like [pink](color)
+    - That could be [brown](color)
+    - I would say it’s [gray](color)
+    - My answer is [black](color)
+    - It seems like [white](color)
+    - Could it be [teal](color)?
+    - I’m thinking [magenta](color)
+    - My guess is [cyan](color)
+    - It has to be [gold](color)
+    - This appears to be [silver](color)
+
+
+
+

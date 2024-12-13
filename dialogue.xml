@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<domain>
+
+
+	<initialstate>
+		<variable id="expected_answer"><value>0</value></variable>
+		<variable id="user_input"><value>0</value></variable>
+		<variable id="explanation"><value>0</value></variable>
+
+	</initialstate>
+
+	<model trigger="expected_answer, user_input, explanation">
+	
+	
+		<rule id="rule_correct_answer">
+			<case>
+				<condition>
+					<if var="expected_answer" relation="=" value="{user_input}" />
+				</condition>
+				<effect>
+					<set var="decision" value="correct!"/>
+				</effect>				
+			</case>
+		</rule>	
+
+		<rule id="rule_incorrect_answer">
+			<case>
+				<condition>
+					<if var="expected_answer" relation="!=" value="{user_input}" />
+				</condition>
+				<effect>
+					<set var="decision" value="That's incorrect {explanation}" />
+				</effect>
+			</case>
+		</rule>
+		
+	</model>
+
+</domain>

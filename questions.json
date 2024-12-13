@@ -1,0 +1,20 @@
+{
+    "1": {
+        "Statement": "Put one cube in front of me.",
+        "Question": "Now add one more. How many cubes will we have?",
+        "Explanation": "We had one cube, if we add one more, we will have two cubes, and we will know that one plus one is equal to two.",
+        "ExpectedAnswer": "2"
+    },
+    "2": {
+        "Statement": "Add two more cubes.",
+        "Question": "How many cubes will we have?",
+        "Explanation": "We had two cubes, if we add two more we can count and see that we will have four, and it means that two plus two is equal to four",
+        "ExpectedAnswer": "4"
+    },
+    "3": {
+        "Statement": "Now remove one cube.",
+        "Question": "How many cubes will be left?",
+        "Explanation": "We had four cubes, if we take one out, we can count and see that we will have three cubes, which means that four minus one is equal to three.",
+        "ExpectedAnswer": "3"
+    }
+}

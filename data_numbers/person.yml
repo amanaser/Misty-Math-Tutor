@@ -1,0 +1,175 @@
+version: "3.1"
+nlu:
+- intent: goodbye
+  examples: |
+    - Bye 
+    - Goodbye
+    - See you later
+    - Bye bot
+    - Goodbye friend
+    - bye
+    - bye for now
+    - catch you later
+    - gotta go
+    - See you
+    - goodnight
+    - have a nice day
+    - i'm off
+    - see you later alligator
+    - we'll speak soon
+- intent: greet
+  examples: |
+    - Hi
+    - Hey
+    - Hi bot
+    - Hey bot
+    - Hello
+    - Good morning
+    - hi again
+    - hi folks
+    - hi Mister
+    - hi pal!
+    - hi there
+    - greetings
+    - hello everybody
+    - hello is anybody there
+    - hello robot
+- intent: thanks
+  examples: |
+    - Thanks
+    - Thank you
+    - Thank you so much
+    - Thanks bot
+    - Thanks for that
+    - cheers
+    - cheers bro
+    - ok thanks!
+    - perfect thank you
+    - thanks a bunch for everything
+    - thanks for the help
+    - thanks a lot
+    - amazing, thanks
+    - cool, thanks
+    - cool thank you
+- intent: affirm
+  examples: |
+    - yes
+    - yep
+    - right
+    - that's right
+    - you got it
+    - well done
+    - yes sure
+    - absolutely
+    - for sure
+    - yes yes yes
+    - definitely
+- intent: deny
+  examples: |
+    - no
+    - nope
+    - not that
+    - no no no
+    - that's not correct
+- intent: answer_arithmetic_question
+  examples: |
+    - The answer is [2](arithmetic_answer)
+    - It is [4](arithmetic_answer)
+    - [3](arithmetic_answer)
+    - I think it's [6](arithmetic_answer)
+    - That should be [7](arithmetic_answer)
+    - Is it [5](arithmetic_answer)?
+    - [8](arithmetic_answer)
+    - My answer is [9](arithmetic_answer)
+    - Misty, it's [10](arithmetic_answer)
+    - [1](arithmetic_answer) is the answer
+    - I believe it's [3](arithmetic_answer)
+    - That equals [4](arithmetic_answer)
+    - My guess is [6](arithmetic_answer)
+    - [7](arithmetic_answer), for sure
+    - It's got to be [8](arithmetic_answer)
+    - [9](arithmetic_answer) is my answer
+    - The answer should be [10](arithmetic_answer)
+    - Misty, the answer is [4](arithmetic_answer)
+    - It is [four](arithmetic_answer)
+    - [three](arithmetic_answer)
+    - [free](arithmetic_answer)
+    - I think it's [six](arithmetic_answer)
+    - That should be [seven](arithmetic_answer)
+    - Is it [five](arithmetic_answer)?
+    - [eight](arithmetic_answer)
+    - My answer is [nine](arithmetic_answer)
+    - Misty, it's [ten](arithmetic_answer)
+    - [one](arithmetic_answer) is the answer
+    - [10](arithmetic_answer), that’s my answer
+    - It's definitely [3](arithmetic_answer)
+    - The answer is [one](arithmetic_answer)
+    - I believe it's [two](arithmetic_answer)
+    - That should be [three](arithmetic_answer)
+    - It's definitely [four](arithmetic_answer)
+    - Misty, the answer is [five](arithmetic_answer)
+    - Is it [six](arithmetic_answer)?
+    - The answer might be [seven](arithmetic_answer)
+    - My answer is [eight](arithmetic_answer)
+    - It has to be [nine](arithmetic_answer)
+    - I'm sure it's [ten](arithmetic_answer)
+    - It's definitely [7](arithmetic_answer)
+    - The answer is clearly [8](arithmetic_answer)
+    - I’m sure it’s [5](arithmetic_answer)
+    - Let’s go with [3](arithmetic_answer)
+    - I think it’s [4](arithmetic_answer)
+    - [2](arithmetic_answer) should be correct
+    - I’ll say [9](arithmetic_answer)
+    - Misty, it’s [4](arithmetic_answer), I think
+    - The total is [5](arithmetic_answer)
+    - My answer is [6](arithmetic_answer)
+    - [8](arithmetic_answer) seems right to me
+    - Let’s say it’s [10](arithmetic_answer)
+    - The answer should be [2](arithmetic_answer)
+    - Let’s say it’s [4](arithmetic_answer)
+    - That should be [three](arithmetic_answer)
+    - Misty, I think it's [four](arithmetic_answer)
+    - The correct answer is [five](arithmetic_answer)
+    - It has to be [six](arithmetic_answer)
+    - Is it [eight](arithmetic_answer)?
+    - I’m certain it’s [nine](arithmetic_answer)
+    - My guess is [ten](arithmetic_answer)
+    - The answer is [2](arithmetic_answer)
+    - It is [4](arithmetic_answer)
+    - [3](arithmetic_answer)
+    - I think it's [6](arithmetic_answer)
+    - That should be [7](arithmetic_answer)
+    - Is it [5](arithmetic_answer)?
+    - [8](arithmetic_answer)
+    - My answer is [9](arithmetic_answer)
+    - Misty, it's [10](arithmetic_answer)
+    - [1](arithmetic_answer) is the answer
+    - I believe it's [3](arithmetic_answer)
+    - [4](arithmetic_answer) is my guess
+    - The number is [1](arithmetic_answer)
+    - My response is [7](arithmetic_answer)
+    - [5](arithmetic_answer), that's my choice
+    - I'm going with [2](arithmetic_answer)
+    - Pretty sure it's [8](arithmetic_answer)
+    - It must be [9](arithmetic_answer)
+    - [10](arithmetic_answer) sounds right to me
+    - Could it be [6](arithmetic_answer)?
+    - The correct number is [3](arithmetic_answer)
+    - [7](arithmetic_answer), I'm confident
+    - Misty, the answer is [4](arithmetic_answer)
+    - I'm thinking [5](arithmetic_answer)
+    - Definitely [2](arithmetic_answer)
+    - [1](arithmetic_answer), that's the number
+
+synonyms:
+  one: 1
+  two: 2
+  three: 3
+  four: 4
+  five: 5
+  six: 6
+  seven: 7
+  eight: 8
+  nine: 9
+  ten: 10
+

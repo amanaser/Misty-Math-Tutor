@@ -2,6 +2,8 @@
 
 This repository provides a collection of interactive modules for the Misty II robot to teach basic concepts such as numbers, arithmetic, and colors to young learners. These modules leverage the Retico Incremental Framework to facilitate real-time communication.
 
+**Final version is on branch version_03.
+**
 ---
 
 ## Curriculum
